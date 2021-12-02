@@ -372,6 +372,9 @@ if __name__ == '__main__':
     parser.add_argument('--beta', default=0.9, type=float, help='beta for ConEF')
     # unbiased gradient compressors
     # parser.add_argument('--grad_reducer', default='unbiased_randomblock', type=str, help='gradient compressor')
+    # parser.add_argument('--grad_reducer', default='unbiased_mtrx', type=str, help='gradient compressor')
+    # special
+    # parser.add_argument('--grad_reducer', default='hEFSGD_powerSGD', type=str, help='gradient compressor')
 
     # powerSGD setups
     parser.add_argument('--matrix_approximation_rank', default=4, type=int, help='Matrix Rank in PowerSGD')
