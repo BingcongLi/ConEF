@@ -318,7 +318,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    ## 4 nodes setup
+    # 4 nodes setup
     parser.add_argument('-n', '--nodes', default=1, type=int, metavar='number of nodes')
     parser.add_argument('-g', '--gpus', default=4, type=int, help='number of gpus per node')
     parser.add_argument('--dist_url', default='tcp://10.0.207.146:25191', type=str,
@@ -341,7 +341,7 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=1111, help='random seed')
 
 
-    # optimizer setup: EFSGD, SGD,
+    # optimizer setup: SGD is enough. EF or ConEF is coped separately in ddp
     parser.add_argument('--name', default='image_classification', type=str, help='checkpoint name')
     # currently only sgd is supported, but it is not hard to change to other optimizers
     parser.add_argument('--opt', default='SGD', type=str, help='Optimizer')
