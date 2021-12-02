@@ -321,15 +321,11 @@ if __name__ == '__main__':
     # 4 nodes setup
     parser.add_argument('-n', '--nodes', default=1, type=int, metavar='number of nodes')
     parser.add_argument('-g', '--gpus', default=4, type=int, help='number of gpus per node')
-    parser.add_argument('--dist_url', default='tcp://10.0.207.146:25191', type=str,
-                        help='url for distributed training')
+    parser.add_argument('--dist_url', default='tcp://10.0.207.146:25191', type=str, help='url for distributed training')
     parser.add_argument('-nr', '--nr', default=0, type=int, help='rank of a node')
 
     # model, dataset, checkpoints
-    parser.add_argument('--dataset',
-                        default='cifar10',
-                        type=str,
-                        help='dataset')
+    parser.add_argument('--dataset', default='cifar10', type=str, help='dataset')
 
     parser.add_argument('--model', default='wideresnet', type=str, help='Model architecture')
     # choosing model as resnet18 or wideresnet or any neural networks you like
@@ -362,13 +358,12 @@ if __name__ == '__main__':
 
     ## reducers and gradient compression setup. Supported choices are listed below explicitly.
     # ddp specific setups
-    parser.add_argument('--start_compression_iter', default=10, type=int,
-                        help='iteration to start gradient compression in ddp')
+    parser.add_argument('--start_compression_iter', default=10, type=int, help='iteration to start gradient compression in ddp')
 
     # SGD
     # parser.add_argument('--grad_reducer', default='allreduce', type=str, help='gradient compressor')
     # EFSGD
-    # parser.add_argument('--grad_reducer', default='efsgd_powerSGD', type=str, help='gradient compressor')
+    # parser.add_argument('--grad_reducer', default='ef_powerSGD', type=str, help='gradient compressor')
     # parser.add_argument('--grad_reducer', default='ef_randomblock', type=str, help='gradient compressor')
     # ConEF
     parser.add_argument('--grad_reducer', default='conef_randomblock', type=str, help='gradient compressor')
