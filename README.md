@@ -1,4 +1,4 @@
-### ConEF
+### Contractive Error Feedback (ConEF)
 This repo contains code for contractive error feedback (ConEF) to reduce the memory overhead of EFSGD. 
 **This is an ongoing project. Please contact me if you want to use the code.**
 
