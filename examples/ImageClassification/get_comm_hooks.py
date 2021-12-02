@@ -60,7 +60,7 @@ def get_comm_hooks(args, net, gpu):
 
 
     # powersgd type reducers
-    elif reducer_name == 'efsgd_powersgd':
+    elif reducer_name == 'ef_powersgd':
         matrix_approximation_rank = args.matrix_approximation_rank
         start_compression_iter = args.start_compression_iter
         min_compression_rate = args.min_compression_rate # typically set to 2
