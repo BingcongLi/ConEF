@@ -6,7 +6,7 @@ This repo contains code for contractive error feedback (ConEF) to reduce the mem
 ### What is ConEF and why it is useful
 
 ConEF is useful for training large models since it reduces the communication overhead while repsects to the memory constraint 
-on GPUs. We expect ConEF to be useful when intergrating with ZeRO2 or ZeRO3. 
+on GPUs. We expect ConEF to be useful when intergrating with [ZeRO2 or ZeRO3](https://arxiv.org/abs/1910.02054). 
 In particular, assuming we use a gradient compression that reduces 90% of 
 communication overhead, and the memory-communication tradeoff between
 different algorithms are summarized in the figure below.
