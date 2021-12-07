@@ -3,7 +3,7 @@ A [torch.ddp](https://pytorch.org/docs/stable/generated/torch.nn.parallel.Distri
 In particular, the gradient compressors are implemented as communication hooks. To use them, one only needs to register one communication hook to ddp.
 
 
-To enable error feedback (EF), one need to set
+To enable error feedback (EF), you need to set
 ```
 use_error_feedback = True
 ```
