@@ -1,4 +1,4 @@
-A [ddp](https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html#torch.nn.parallel.DistributedDataParallel.) based implementation of ConEF.
+A [torch.ddp](https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html#torch.nn.parallel.DistributedDataParallel.) based implementation of ConEF.
 
 In particular, the gradient compressors are implemented as communication hooks. To use them, one only needs to register one communication hook to ddp.
 
