@@ -9,7 +9,7 @@ ConEF is useful for training large models since it reduces the communication ove
 on GPUs. We expect ConEF to be useful when intergrating with [ZeRO2 or ZeRO3](https://arxiv.org/abs/1910.02054). 
 In particular, assuming we use a gradient compression that reduces 90% of 
 communication overhead, and the memory-communication tradeoff between
-different algorithms are summarized in the figure below.
+different algorithms are summarized in the figure below. (To be upload.)
 
 
 ### Requirement:
